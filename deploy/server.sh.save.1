@@ -1,0 +1,7 @@
+!#/bin/bash
+DJANGODIR=$(dirname $(cd "dirname $O" && pwd))
+DJANGO_SETTINGS_MODULE=config.settings
+cd $DJANGODIR
+source enviroments/venvproduccion/bin/activate
+export DJANGO_SETTINGS_MODULE=config.settings
+exec python manage.py runserverver 0:8000

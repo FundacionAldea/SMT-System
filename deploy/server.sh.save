@@ -1,0 +1,3 @@
+#!/bin/bash
+DJANGODIR=$(dirname $(cd 'dirname $0' && pwd))
+echo DJANGODIR
